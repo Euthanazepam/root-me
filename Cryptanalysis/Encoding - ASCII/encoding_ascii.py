@@ -1,4 +1,4 @@
-import requests
+from requests import get
 
 base_url = "https://static.root-me.org"
 path = "cryptanalyse/ch8"
@@ -12,7 +12,7 @@ def download_file() -> None:
 
     url = f"{base_url}/{path}/{filename}"
 
-    response = requests.get(url=url)
+    response = get(url=url)
 
     try:
         with open(f"Encoding - ASCII/{filename}", "wb") as f:
