@@ -17,3 +17,4 @@ virtualenv/
 
 # Temp files and dirs
 *.txt
+*.tar.gz
