@@ -16,5 +16,8 @@ venv.bak/
 virtualenv/
 
 # Temp files and dirs
+*.bin
+*.dic
+*.rar
 *.txt
 *.tar.gz
