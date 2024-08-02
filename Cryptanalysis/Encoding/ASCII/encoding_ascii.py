@@ -24,7 +24,9 @@ def download_file() -> None:
 
 def get_flag() -> str:
     """
-    https://www.root-me.org/en/Challenges/Cryptanalysis/Encoding-ASCII
+    Returns the challenge flag https://www.root-me.org/en/Challenges/Cryptanalysis/Encoding-ASCII
+
+    :return: Flag
     """
 
     download_file()

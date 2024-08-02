@@ -25,7 +25,9 @@ def download_file() -> None:
 
 def get_flag() -> str:
     """
-    https://www.root-me.org/en/Challenges/Cryptanalysis/Encoding-UU
+    Returns the challenge flag https://www.root-me.org/en/Challenges/Cryptanalysis/Encoding-UU
+
+    :return: Flag
     """
 
     download_file()
