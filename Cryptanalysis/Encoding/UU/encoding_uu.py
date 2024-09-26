@@ -1,4 +1,5 @@
 from binascii import a2b_uu
+from os.path import exists
 from requests import get
 
 base_url = "https://static.root-me.org"
@@ -30,7 +31,8 @@ def get_flag() -> str:
     :return: Flag
     """
 
-    download_file()
+    if not exists(f"{filename}"):
+        download_file()
 
     try:
         with open(f"Encoding - UU/{filename}", "r") as f:
