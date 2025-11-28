@@ -1,6 +1,11 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#
+# Description:
 # This script cracks the hash from the task https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-SHA-2
+#
+# Usage:
+# ./get-flag.sh
+#
 
 DICTIONARY=InsidePro_Full_6.dic
 FILE=ch13.txt

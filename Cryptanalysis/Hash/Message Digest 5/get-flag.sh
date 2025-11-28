@@ -1,6 +1,11 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#
+# Description:
 # This script cracks the hash from the task https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-Message-Digest-5
+#
+# Usage:
+# ./get-flag.sh
+#
 
 DICTIONARY=rockyou.txt
 FILE=ch2.txt

@@ -1,9 +1,14 @@
-#!/bin/bash
-
-# This script cracks the hash from the task https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC
+#!/usr/bin/env bash
+#
+# Description:
+# This script cracks the hash from the task https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-DCC2
+#
+# Usage:
+# ./get-flag.sh
+#
 
 DICTIONARY=rockyou.txt
-FILE=ch50.txt
+FILE=ch51.txt
 POTFILE=~/.local/share/hashcat/hashcat.potfile
 PACKAGE_NAME="hashcat"
 
@@ -34,15 +39,15 @@ function downloadAndExtractDictionary() {
 function downloadTaskFile() {
   # Downloads the task file.
   if [ ! -f $FILE ]; then
-    wget https://static.root-me.org/cryptanalyse/ch50/$FILE
+    wget https://static.root-me.org/cryptanalyse/ch51/$FILE
   fi
 }
 
 function decryptHash() {
   # Cracks the hash from the task file by dictionary.
-  HASH=$(grep 'ROOTME.LOCAL/Administrator' $FILE | cut -d ':' -f 2,3)
-  hashcat -m 1100 -a 0 $HASH $DICTIONARY
-  cat $POTFILE | cut -d : -f 3
+  HASH=$(grep 'ROOTME.LOCAL/Administrator' $FILE | cut -d ':' -f 2)
+  hashcat -m 2100 -a 0 $HASH $DICTIONARY
+  cat $POTFILE | cut -d : -f 2
 }
 
 checkHashcat

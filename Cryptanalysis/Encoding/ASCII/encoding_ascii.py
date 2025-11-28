@@ -1,5 +1,10 @@
+#!/usr/bin/env python3
+
+# Standard library imports
 from os.path import exists
-from requests import get
+
+# Third-party library imports
+from requests import get    # pip install requests
 
 base_url = "https://static.root-me.org"
 path = "cryptanalyse/ch8"

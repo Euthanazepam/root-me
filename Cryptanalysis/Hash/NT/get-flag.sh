@@ -1,6 +1,11 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+#
+# Description:
 # This script cracks the hash from the task https://www.root-me.org/en/Challenges/Cryptanalysis/Hash-NT
+#
+# Usage:
+# ./get-flag.sh
+#
 
 FILE=ch48.txt
 POTFILE=~/.local/share/hashcat/hashcat.potfile
